@@ -1,0 +1,23 @@
+1. http://127.0.0.1:5000/insert_or_update_weather_data  (POST)
+
+input 1 :json raw weather_data
+{
+    "Vizag": { "temp": 35, "humidity": 71, "air_quality": 80 },
+    "Vizinagaram": { "temp": 34, "humidity": 61, "air_quality": 91 },
+    "Srikakulam": { "temp": 35, "humidity": 64, "air_quality": 90 }
+}
+input 2 = weather_data.json
+
+2. http://127.0.0.1:5000/update_city_weather_data/mumbai (PUT)
+
+input = { "temp": 34, "humidity": 70, "air_quality": 49 }
+
+3. http://127.0.0.1:5000/delete_city_weather_data/godavari (DELETE)
+
+4. http://127.0.0.1:5000/weather_data/city/godavari (GET)
+
+5. http://127.0.0.1:5000/weather_data/temperature/34 (GET)
+
+6. http://127.0.0.1:5000/weather_data/humidity/60 (GET)
+
+7. http://127.0.0.1:5000//weather_data/airquality/30
